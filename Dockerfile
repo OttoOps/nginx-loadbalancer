@@ -1,4 +1,4 @@
-FROM nginx:1.7
+FROM nginx:1.9.2
 MAINTAINER Paul Otto <paul@ottoops.com>
 
 ENV CONSUL_TEMPLATE_VERSION=0.10.0
