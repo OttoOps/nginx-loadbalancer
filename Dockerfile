@@ -17,6 +17,6 @@ RUN rm -v /etc/nginx/nginx.conf
 ADD nginx.conf /etc/nginx/nginx.conf
 
 RUN rm -v /etc/nginx/conf.d/*
-ADD services.tmpl /etc/consul-templates/services.conf
+ADD services.tmpl /etc/consul-templates/services.tmpl
 
 CMD ["/usr/bin/runsvdir", "/etc/service"]
