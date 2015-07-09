@@ -1,3 +1,10 @@
+server {
+    location = /health {
+      return 200;
+      #access_log off;
+    }
+}
+
 {{ range services }}
 upstream {{ .Name }} {
   least_conn;
