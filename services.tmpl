@@ -15,7 +15,6 @@ upstream {{ .Name }} {
 server {
   listen {{ env "SERVER_VIP" }}:80;
   server_name {{ .Name }}.{{ env "SERVER_DOMAIN" }};
-  proxy_pass http://{{ .Name }};
 
   location / {
     proxy_pass http://{{ .Name }};
